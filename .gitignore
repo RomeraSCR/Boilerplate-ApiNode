@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+.bin
+
+# Bin directory (apenas para npm, não versionar no git)
+bin/
+# OS
+Thumbs.db
+
+# Test directories
+teste-*/
+test-*/
+
+# Remote scripts temp files
+.temp-*.ts
+.temp-scripts/
+
+# Template directory (apenas para npm, não versionar no git)
+template/*
+

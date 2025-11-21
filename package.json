@@ -1,0 +1,73 @@
+{
+  "name": "boilerplate-apinode",
+  "version": "1.0.0",
+  "description": "Boilerplate completo de API Node.js com TypeScript, Express e Swagger - Desenvolvido por RomeraSCR",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomeraSCR/Boilerplate-ApiNode.git"
+  },
+  "homepage": "https://github.com/RomeraSCR/Boilerplate-ApiNode#readme",
+  "bugs": {
+    "url": "https://github.com/RomeraSCR/Boilerplate-ApiNode/issues"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "start:dev": "npm run dev",
+    "lint": "echo 'Linter não configurado. Configure ESLint se necessário.'",
+    "type-check": "tsc --noEmit",
+    "help": "node -e \"console.log('\\n🚀 RMRAPI - Comandos Disponíveis\\n\\n📦 Desenvolvimento:\\n  pnpm dev              Inicia o servidor em modo desenvolvimento\\n  pnpm build            Compila o projeto TypeScript\\n  pnpm start            Inicia o servidor em produção\\n  pnpm type-check       Verifica erros de tipo TypeScript\\n\\n🔧 Geração de Código:\\n  pnpm addRoute <nome>  Cria rotas, controllers e services\\n  pnpm addBanco         Configura banco de dados (MongoDB, PostgreSQL, MySQL, SQLite)\\n  pnpm addAuth          Adiciona autenticação (JWT ou Passport.js)\\n  pnpm addValidator     Adiciona validação (Joi, Zod ou Yup)\\n  pnpm addLogger        Adiciona sistema de logs (Winston, Pino ou Morgan)\\n  pnpm addEmail         Adiciona serviço de email (Nodemailer ou SendGrid)\\n  pnpm addMiddleware <nome>  Cria um novo middleware\\n  pnpm addModel <nome>  Cria um novo model\\n\\n💡 Exemplos:\\n  pnpm addRoute usuarios\\n  pnpm addBanco\\n  pnpm addAuth\\n\\n📚 Documentação: https://github.com/RomeraSCR/Boilerplate-ApiNode\\n')\"",
+    "addRoute": "tsx node_modules/rmrapi-utils/scripts/addRoute.ts",
+    "createRoute": "tsx node_modules/rmrapi-utils/scripts/addRoute.ts",
+    "addBanco": "tsx node_modules/rmrapi-utils/scripts/addBanco.ts",
+    "addAuth": "tsx node_modules/rmrapi-utils/scripts/addAuth.ts",
+    "addValidator": "tsx node_modules/rmrapi-utils/scripts/addValidator.ts",
+    "addLogger": "tsx node_modules/rmrapi-utils/scripts/addLogger.ts",
+    "addEmail": "tsx node_modules/rmrapi-utils/scripts/addEmail.ts",
+    "addMiddleware": "tsx node_modules/rmrapi-utils/scripts/addMiddleware.ts",
+    "addModel": "tsx node_modules/rmrapi-utils/scripts/addModel.ts"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "express",
+    "swagger",
+    "api",
+    "boilerplate",
+    "rmrapi",
+    "romerascr",
+    "rest-api",
+    "backend",
+    "node-api"
+  ],
+  "author": "RomeraSCR",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/inquirer": "^8.2.12",
+    "@types/node": "^24.10.1",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@types/yargs": "^17.0.35",
+    "cross-env": "^10.1.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "inquirer": "^8.2.7",
+    "rmrapi-utils": "^1.0.16",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "yargs": "^18.0.0"
+  }
+}
+
